@@ -17,3 +17,6 @@ class Solution(object):
             postfix *= nums[i]
         
         return res
+
+# Time complexity: O(n)
+# approach it with pen and paper first, that will make the code translation easier
