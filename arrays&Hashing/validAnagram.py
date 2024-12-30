@@ -17,4 +17,11 @@ class Solution(object):
         if hashS == hashT:
             return True
         return False
+
+        # OR
+        
+        for c in hashS: # this is faster
+            if hashS[c] != hashT.get(c, 0):
+                return False
+        return True
         
