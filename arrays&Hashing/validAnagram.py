@@ -25,3 +25,5 @@ class Solution(object):
                 return False
         return True
         
+# Time complexity: O(n), more precisely O(S + T)
+# Space Complexity: O(n)
