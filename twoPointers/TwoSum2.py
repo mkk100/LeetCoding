@@ -18,3 +18,4 @@ class Solution(object):
 
 # Time - O(N)
 # Space - O(1)
+# There are other approaches, take advantage of the sorted array
