@@ -15,3 +15,7 @@ class Solution(object):
             if slow == fast:
                 return True
         return False
+
+# Time complexity: O(n)
+# Space complexity: O(1)
+# Floyd's Tortoise and Hare algorithm
