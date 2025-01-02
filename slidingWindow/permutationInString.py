@@ -32,3 +32,4 @@ class Solution(object):
 # Space complexity: O(N)
 # Approach: populate the counts with s1 value first, check if they are equal if not start sliding window, 
 # this is the left ptr, ord(s2[r - n1]) - ord('a')
+# I used greg hogg solution.
