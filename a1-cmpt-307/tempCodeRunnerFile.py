@@ -1,0 +1,1 @@
+print(f"The minimum n0 for which the divide-and-conquer algorithm runs faster than the brute-force algorithm is {n0}.")
