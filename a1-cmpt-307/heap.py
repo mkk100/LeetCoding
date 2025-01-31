@@ -45,3 +45,6 @@ def min_heapify(arr,size, i):
 def build_min_heap(a):
     for i in range(len(a)//2, 0,-1):
         min_heapify(a, len(a),i)
+        
+def heap_extract_min(a):
+    return a[0]
