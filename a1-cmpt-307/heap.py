@@ -1,5 +1,5 @@
 def max_heapify(arr, size, i):
-    l = 2 * i
+    l = 2 * i 
     r = 2 * i + 1
 
     largest = i
@@ -35,7 +35,7 @@ def min_heapify(arr, size, i):
 
     if l < size and arr[l] < arr[smallest]:
         smallest = l
-    elif r < size and arr[r] < arr[smallest]:
+    if r < size and arr[r] < arr[smallest]:
         smallest = r
 
     if smallest != i:
@@ -44,7 +44,7 @@ def min_heapify(arr, size, i):
 
 
 def build_min_heap(a):
-    for i in range((len(a) // 2) - 1, -1, -1):
+    for i in range((len(a) // 2), -1, -1):
         min_heapify(a, len(a), i)
 
 
