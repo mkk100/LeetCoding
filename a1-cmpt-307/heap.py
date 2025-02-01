@@ -1,12 +1,12 @@
 def max_heapify(arr, size, i):
-    l = 2 * i 
+    l = 2 * i
     r = 2 * i + 1
 
     largest = i
 
     if l < size and arr[i] < arr[l]:
         largest = l
-    elif r < size and arr[i] < arr[r]:
+    if r < size and arr[i] < arr[r]:
         largest = r
 
     if largest != i:
