@@ -4,9 +4,9 @@ def max_heapify(arr, size, i):
 
     largest = i
 
-    if l < size and arr[i] < arr[l]:
+    if l < size and arr[largest] < arr[l]:
         largest = l
-    if r < size and arr[i] < arr[r]:
+    if r < size and arr[largest] < arr[r]:
         largest = r
 
     if largest != i:
@@ -16,7 +16,7 @@ def max_heapify(arr, size, i):
 
 def build_max_heap(a):
     arrLen = len(a)
-    for i in range(arrLen // 2 - 1, -1, -1):
+    for i in range(arrLen // 2, -1, -1):
         max_heapify(a, arrLen, i)
 
 
@@ -57,5 +57,5 @@ def minHeapSort(a):
 
 
 a = [10, 7, 11, 5, 4, 13]
-minHeapSort(a)
+build_min_heap(a)
 print(a)
