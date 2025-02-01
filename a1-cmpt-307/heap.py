@@ -51,11 +51,35 @@ def build_min_heap(a):
 def minHeapSort(a):
     build_min_heap(a)
 
-    for i in range(len(a) - 1, 0, -1):
+    for i in range(len(a) - 1, -1, -1):
         a[0], a[i] = a[i], a[0]
         min_heapify(a, i, 0)
 
 
+def extract_min(a):
+    if not a:
+        return None
+    a[0], a[-1] = a[-1], a[0]
+    res = a.pop()
+    maxHeapSort(a)
+    return res
+
+
+def heap_decrease_key(a, i, key):
+    if key > a[i]:
+        return None
+    a[i] = key
+    while i > 0 and a[i // 2] > a[i]:
+        a[i], a[i // 2] = a[i // 2], a[i]
+        i = i // 2
+
+
 a = [10, 7, 11, 5, 4, 13]
 build_min_heap(a)
+print(a)
+
+extract_min(a)
+print(a)
+
+heap_decrease_key(a, 2, 3)
 print(a)

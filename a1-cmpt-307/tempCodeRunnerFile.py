@@ -1,3 +1,4 @@
+
 def min_heapify(arr, size, i):
     l = 2 * i + 1
     r = 2 * i + 2
@@ -5,7 +6,7 @@ def min_heapify(arr, size, i):
 
     if l < size and arr[l] < arr[smallest]:
         smallest = l
-    elif r < size and arr[r] < arr[smallest]:
+    if r < size and arr[r] < arr[smallest]:
         smallest = r
 
     if smallest != i:
@@ -14,7 +15,7 @@ def min_heapify(arr, size, i):
 
 
 def build_min_heap(a):
-    for i in range((len(a) // 2) - 1, -1, -1):
+    for i in range((len(a) // 2), -1, -1):
         min_heapify(a, len(a), i)
 
 
@@ -26,6 +27,17 @@ def minHeapSort(a):
         min_heapify(a, i, 0)
 
 
+def extract_min(a):
+    if not a:
+        return None
+    a[0], a[-1] = a[-1], a[0]
+    res = a.pop()
+    min_heapify(a, len(a), 0)
+    return res
+
+
 a = [10, 7, 11, 5, 4, 13]
-minHeapSort(a)
+build_min_heap(a)
+print(a)
+print(extract_min(a))
 print(a)
