@@ -1,0 +1,9 @@
+import math
+import random
+
+
+def randomSearch(a, x):
+    while True:
+        i = math.floor(random.random() * len(a))
+        if a[i] == x:
+            return i
