@@ -84,9 +84,13 @@ def heap_decrease_key(a, i, key):
         i = i // 2
 
 
-def min_heap_insert(a, key):
-    a.append(float("inf"))
-    heap_decrease_key(a, len(a) - 1, key)
+def min_heap_insert(a, value):
+    a.append(value)
+    i = len(a) - 1
+    while i > 0 and a[(i - 1) // 2] > a[i]:
+        a[i], a[(i - 1) // 2] = a[(i - 1) // 2], a[i]
+        i = i // 2
+    
 
 
 a = [10, 7, 11, 4, 4, 13]
