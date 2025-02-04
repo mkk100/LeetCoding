@@ -13,6 +13,16 @@ def max_heapify(arr, size, i):
         arr[largest], arr[i] = arr[i], arr[largest]
         max_heapify(arr, size, largest)
 
+def dary_max_heapify(arr, size, i, d):
+    largest = i
+    for j in range(1, d + 1):
+        child = d * i + j
+        if child < size and arr[largest] < arr[child]:
+            largest = child
+
+    if largest != i:
+        arr[largest], arr[i] = arr[i], arr[largest]
+        dary_max_heapify(arr, size, largest, d)
 
 def build_max_heap(a):
     arrLen = len(a)
