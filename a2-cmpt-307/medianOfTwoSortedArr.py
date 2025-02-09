@@ -1,4 +1,4 @@
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         X, Y = nums1, nums2
         total = len(X) + len(Y)
         half = total // 2
