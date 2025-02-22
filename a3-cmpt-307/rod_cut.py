@@ -1,11 +1,11 @@
-def cutRod(i, price, memo):
+def cutRod(i, price, memo, costs):
     if i in memo:
         return memo[i]
     if i <= 0:
         return 0
     ans = 0
     for j in range(1, i):
-        res = price[j-1] + cutRod(i - j, price, memo)
+        res = price[j-1] + cutRod(i - j, price, memo, costs) - costs[j-1]
         ans = max(ans, res)
     memo[i] = ans
 
