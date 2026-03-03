@@ -1,4 +1,5 @@
 # use a set, second condition is to check if the number is even and already seen
+# there are 3 other approaches, maybe you can take a look at them.
 class Solution(object):
     def checkIfExist(self, arr):
         """
