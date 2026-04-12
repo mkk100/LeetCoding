@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 
-# use two ptrs
+# use two ptrs, return prev cus, prev is the new head now
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev, curr = None, head

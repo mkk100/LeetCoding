@@ -21,3 +21,11 @@ strings are immutable in Python
 Singly Linked List (non-contiguous)
 Search, Insertion, Deletion (all O(n))
 Doubly Linked List
+
+Hashtable
+Hash Function - process that takes input and convert it to index
+Collisions - same index
+Collision handling - separate chaining and linear probing
+
+hash set - store unique items
+hash map - dict (kv pairs)
