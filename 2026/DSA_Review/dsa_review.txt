@@ -17,3 +17,7 @@ amortized means on average
 
 Strings
 strings are immutable in Python
+
+Singly Linked List (non-contiguous)
+Search, Insertion, Deletion (all O(n))
+Doubly Linked List
