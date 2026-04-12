@@ -1,2 +1,19 @@
 Big O notation
 Time & Space Complexity
+
+Static Array (Mutable)
+Search - O(N)
+Insertion - O(N)
+Deletion - O(N)
+
+Dynamic Array 
+called List in Python, Python doesn't even use static array.
+Static array under the hood.
+Insertion - O(N)
+Append - O(N) or O(1), depends on capacity
+Deletion - O(N)
+
+amortized means on average
+
+Strings
+strings are immutable in Python
