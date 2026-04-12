@@ -12,4 +12,4 @@ class Solution(object):
             arr[i] = max_val_right
             max_val_right = max(max_val_right, current)
         return arr
-        
+ 
