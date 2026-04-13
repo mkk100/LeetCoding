@@ -29,3 +29,12 @@ Collision handling - separate chaining and linear probing
 
 hash set - store unique items
 hash map - dict (kv pairs)
+
+Stacks 
+LIFO - add and pop from the right side, all ops O(1)
+
+Queues
+FIFO
+enqueue - adds from right
+dequeue - remove from left O(N)
+if you use deque than O(1), cus deque library uses LL.
