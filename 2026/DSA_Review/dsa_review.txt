@@ -38,3 +38,7 @@ FIFO
 enqueue - adds from right
 dequeue - remove from left O(N)
 if you use deque than O(1), cus deque library uses LL.
+
+Recursion
+space complexity - O(N)
+time - depends
