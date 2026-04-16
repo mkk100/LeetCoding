@@ -42,3 +42,11 @@ if you use deque than O(1), cus deque library uses LL.
 Recursion
 space complexity - O(N)
 time - depends
+
+Binary Search
+
+Traditional
+m = (l + r) // 2, we round it down so if even number, we pick lower one.
+
+Over-under
+Condition based
