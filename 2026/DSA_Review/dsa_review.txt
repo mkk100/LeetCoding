@@ -50,3 +50,20 @@ m = (l + r) // 2, we round it down so if even number, we pick lower one.
 
 Over-under
 Condition based
+
+Binary Trees
+Terms
+parent, child
+leaf nodes
+root
+Trees are sub-category of graph
+perfect tree - everything filled up
+complete tree - last might not be filled.
+
+i, left child is 2i, right child 2i + 1
+
+DFS - stack
+BFS - queue
+
+BST (Binary Search Tree) - left smaller than parent, right bigger than parent
+hence TC: O(log N)
