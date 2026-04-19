@@ -67,3 +67,12 @@ BFS - queue
 
 BST (Binary Search Tree) - left smaller than parent, right bigger than parent
 hence TC: O(log N)
+
+Heaps or PQ
+- Type of Binary Tree
+2i+1 (left), 2i+2 (right)
+
+heapify - O(n)
+heap pop - O(log n)
+heap push - O(log n)
+heap peek - O(1)
