@@ -76,3 +76,11 @@ heapify - O(n)
 heap pop - O(log n)
 heap push - O(log n)
 heap peek - O(1)
+
+Sorting
+bubble sort - TC O(n^2), SC O(1)
+insertion sort - TC O(n^2), SC O(1)
+selection sort - TC O(n^2), SC O(1)
+merge sort - O(NlogN), SC O(logN)
+quick sort - avg case O(nlogN), good pivot
+counting sort - TC (O(k+n)), roughly o(N)for  
