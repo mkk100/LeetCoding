@@ -1,10 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        parenDict = {")":"(", "}":"{","]":"["}
+        parenDict = {"}":"{","]":"[",")":"("}
         stack = []
         for p in s:
             if p in parenDict:
-                if stack and stack[-1] == parenDict[p]: # ( != ], check matching parentheses                   
+                if stack and parenDict[p] == stack[-1]: # stack: [(], p = ), parenDict[)] = (
                     stack.pop()
                 else:
                     return False
