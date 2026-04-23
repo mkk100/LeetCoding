@@ -84,3 +84,28 @@ selection sort - TC O(n^2), SC O(1)
 merge sort - O(NlogN), SC O(logN)
 quick sort - avg case O(nlogN), good pivot
 counting sort - TC (O(k+n)), roughly o(N)for  
+
+Graphs
+Trees and LLs are subclasses of graphs
+Graph has vertices (or nodes) and edges (connections).
+
+Directed graph (have directions)
+Undirected graph
+Graph can have cycles
+
+Three ways to represent matrices
+- Edge List (hard to work with)
+- Adjacency Matrix (2D list, a lot of 0s)
+- Adjacency List (hashmap, key is the node's value, usually this is the way)
+
+Traversal
+DFS - recursive and stack
+BFS 
+
+TC - O(V + E), for each vertex and its related edges
+SC - O(V + E)
+
+Trees - connected acyclic graph
+for trees,
+V = nodes
+E = n - 1
