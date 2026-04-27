@@ -18,3 +18,6 @@ class Solution:
                     q.append((nr,nc,length+1))
                     visit.add((nr,nc))
         return -1
+
+# we don't need two for loops here because unlike island problems, we
+# know the starting point.
