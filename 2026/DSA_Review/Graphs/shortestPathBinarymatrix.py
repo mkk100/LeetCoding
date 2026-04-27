@@ -1,7 +1,7 @@
 class Solution:
     def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
         N = len(grid)
-        if grid[0][0] or grid[N - 1][N - 1]:
+        if grid[0][0] or grid[N - 1][N - 1]:# if the start cell or end cell is blocked. 
             return -1
         q = collections.deque([(0,0,1)])
         visit = set([0,0])
