@@ -111,3 +111,5 @@ V = nodes
 E = n - 1
 
 Backtracking - exhaustive search for all the solutions
+
+Variable vs Fixed Length Sliding Window
