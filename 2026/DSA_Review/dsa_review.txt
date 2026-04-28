@@ -109,3 +109,5 @@ Trees - connected acyclic graph
 for trees,
 V = nodes
 E = n - 1
+
+Backtracking - exhaustive search for all the solutions
