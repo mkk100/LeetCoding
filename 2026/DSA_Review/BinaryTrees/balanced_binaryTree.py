@@ -17,3 +17,5 @@ class Solution:
             return [balanced, 1 + max(left[1],right[1])]
 
         return helperFunc(root)[0]
+    
+# May 19th
