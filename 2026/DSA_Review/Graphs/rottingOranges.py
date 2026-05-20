@@ -13,7 +13,7 @@ class Solution:
 
         dirs = [[0,1],[0,-1],[1,0],[-1,0]]
         while q and fresh:
-            for i in range(len(q)): # extra loop to pop the preexisting oranges
+            for i in range(len(q)): # extra loop to pop the preexisting oranges from above, more than one rotten oranges in the queue
                 r, c = q.popleft()
                 for dr, dc in dirs:
                     nr, nc = dr + r, dc + c
@@ -25,4 +25,4 @@ class Solution:
             minutes += 1
         return minutes if fresh == 0 else -1
 
-
+# May 20th 
