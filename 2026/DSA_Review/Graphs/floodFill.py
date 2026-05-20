@@ -1,24 +1,21 @@
 # dfs
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-        if image[sr][sc] == color:
+        orig = image[sr][sc]
+        if orig == color:
             return image
-        
         m, n = len(image), len(image[0])
 
-        def dfs(r, c, original):
-            if not (0 <= r < m) or not (0 <= c < n) or image[r][c] != original:
+        def dfs(r, c):
+            if not (0 <= r < m) or not (0 <= c < n) or image[r][c] != orig:
                 return
             
             image[r][c] = color
-            
-            # we moving 4 directions
-            dfs(r - 1, c, original)
-            dfs(r + 1, c, original)
-            dfs(r, c - 1, original)
-            dfs(r, c + 1, original)
-
-        dfs(sr, sc, image[sr][sc])
+            dfs(r + 1, c)
+            dfs(r - 1, c)
+            dfs(r, c + 1)
+            dfs(r, c - 1)
+        dfs(sr, sc)
         return image
     
 
