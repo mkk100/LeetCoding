@@ -8,3 +8,4 @@ class Solution:
                 k += 1
         return k
         # putting non-val characters in the beginning of the array
+# May 21st
