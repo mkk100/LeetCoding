@@ -12,3 +12,4 @@ class Solution:
         stones.append(0) # edge case for when stone arr is empty
         return abs(stones[0])
 
+# May 21st
