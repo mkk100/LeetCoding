@@ -13,3 +13,5 @@ class Solution:
                 stack.append(int(e))
                 
         return sum(stack)
+    
+# May 21st
