@@ -9,3 +9,5 @@ class Solution:
                 r = m - 1
             elif guess(m) == 1:
                 l = m + 1
+
+# May 21st
