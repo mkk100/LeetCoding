@@ -13,7 +13,7 @@ class Solution:
             
             # pick the num
             cur.append(nums[i])
-            backtrack(i, cur, nums[i] + total)
+            backtrack(i, cur, nums[i] + total) # no i + 1 here because left side we picking same numbers
             cur.pop()
 
             # not pick
@@ -21,3 +21,5 @@ class Solution:
         
         backtrack(0, [], 0)
         return res
+
+# May 22nd

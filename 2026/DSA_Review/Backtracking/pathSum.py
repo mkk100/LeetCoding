@@ -19,3 +19,6 @@ class Solution: # just dfs, try out with iterative dfs and bfs too
             return dfs(node.left, curSum) or dfs(node.right,curSum)
         
         return dfs(root, 0)
+    
+
+# May 22nd
