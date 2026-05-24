@@ -13,4 +13,5 @@ class Solution:
                 if avg >= threshold:
                     count += 1
         return count
-        
+    
+# May 24th
