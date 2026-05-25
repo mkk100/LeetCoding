@@ -1,6 +1,6 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        hashMap = {0:1}
+        hashMap = {0:1} # prefix sum 0 appears once
         res = 0
         curSum = 0
         for n in nums:
