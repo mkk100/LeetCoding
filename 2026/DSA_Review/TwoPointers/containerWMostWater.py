@@ -15,3 +15,5 @@ class Solution:
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
 # param_1 = obj.sumRange(left,right)
+
+# May 25th
