@@ -6,7 +6,7 @@ class Solution:
             count[s[r]] = count.get(s[r],0) + 1
             max_count = max(count.values())
 
-            while (r - l + 1) - max_count > k:
+            while (r - l + 1) - max_count > k: # shrinking the window
                 count[s[l]] = count.get(s[l]) - 1
                 l += 1
             
@@ -14,3 +14,4 @@ class Solution:
         return longest
 
 # May 24th
+# jun 6th
