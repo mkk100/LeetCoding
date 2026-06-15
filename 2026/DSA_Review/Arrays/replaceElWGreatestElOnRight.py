@@ -7,7 +7,9 @@ class Solution:
             arr[i] = maxToRight
             maxToRight = max(maxToRight, tmp)
         return arr
-    
+
     # backwards
 
+
 # May 21st
+# June 15th
