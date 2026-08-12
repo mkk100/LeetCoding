@@ -21,3 +21,23 @@ class Solution(object):
             arr[i] = res[i]
                         
 # not working, not understand solution, come back
+
+class Solution(object): # extra space solution
+    def duplicateZeros(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: None Do not return anything, modify arr in-place instead.
+        """
+        res = [] # forward 0s and then copy it back
+        for n in arr:
+            if n == 0:
+                res.append(0)
+                res.append(0)
+            else:
+                res.append(n)
+        
+        for i in range(len(arr)):
+            arr[i] = res[i]
+        
+        
+                        
