@@ -40,7 +40,6 @@ class Solution(object):
         k = len(nums1) - 1
         
         while j >= 0:
-            print(nums1[i], nums2[j],nums1[k], nums1)
             if i >= 0 and nums1[i] > nums2[j]:
                 nums1[k] = nums1[i] 
                 i -= 1
