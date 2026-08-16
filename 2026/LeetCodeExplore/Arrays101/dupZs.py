@@ -38,6 +38,28 @@ class Solution(object): # extra space solution
         
         for i in range(len(arr)):
             arr[i] = res[i]
+
+# Optimal with O(1) space
+class Solution(object):
+    def duplicateZeros(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: None Do not return anything, modify arr in-place instead.
+        """
+        zeroCount = 0
+        for n in arr:
+            if n == 0:
+                zeroCount += 1
+                
+        l = len(arr) - 1 + zeroCount
+        for r in range(len(arr) - 1, -1, -1):
+            if r + 1 < len(arr) and arr[r+1] == 0:
+                if l < len(arr): arr[l] = 0
+                l -= 1
+            if l < len(arr):
+                arr[l] = arr[r]
+            l -= 1
+        
         
         
                         
