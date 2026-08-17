@@ -40,7 +40,7 @@ class Solution(object):
         k = len(nums1) - 1
         
         while j >= 0:
-            if i >= 0 and nums1[i] > nums2[j]:
+            if i >= 0 and nums1[i] > nums2[j]: # edge case happens when m -= 1
                 nums1[k] = nums1[i] 
                 i -= 1
             else:
