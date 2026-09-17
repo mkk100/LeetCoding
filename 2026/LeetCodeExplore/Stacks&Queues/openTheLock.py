@@ -29,6 +29,7 @@ class Solution(object):
                     visit.add(i)
                     q.append([i, turns + 1])
         return -1 
-            
+ 
+ # O(10,000) cus 10 * 10 * 10 * 10 for each lock combination           
         
         
