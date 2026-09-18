@@ -10,7 +10,7 @@ class Solution(object):
         rows, cols = len(image), len(image[0])
         orig = image[sr][sc]
         
-        if orig == color:
+        if orig == color: # edge case
             return image
         
         def dfs(r,c):
