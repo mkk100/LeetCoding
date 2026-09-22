@@ -1,3 +1,6 @@
+# i used the same approach as 1
+
+
 """
 # Definition for a Node.
 class Node(object):
