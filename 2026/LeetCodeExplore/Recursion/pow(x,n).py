@@ -10,7 +10,7 @@ class Solution(object):
                 return 1
             res = helper(n // 2)
             res *= res
-            return x * res if n % 2 == 1 else res
+            return x * res if n % 2 == 1 else res # if odd exponent
         res = helper(abs(n))
-        return res if n > 0 else 1 / res
+        return res if n > 0 else 1 / res # handling negative case
             
